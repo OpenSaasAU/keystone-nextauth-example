@@ -10,6 +10,9 @@ This repo provides and example of '@opensaas/keystone-nextjs-auth' (https://gith
 
 ## Starting
 This example uses Auth0 as the Provider, to start set the following environment variables
+
+Setup a regular Auth0 Application (https://auth0.com/docs/quickstart/webapp/nextjs/01-login#configure-auth0) with the callback URL of `http://localhost:3000/api/auth/callback/auth0`
+
 ```bash
 export AUTH0_CLIENT_ID=<Your_Auth0_ClientID>
 export AUTH0_CLIENT_SECRET=<Your_Auth0_Secrete>
