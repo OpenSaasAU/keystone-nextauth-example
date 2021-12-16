@@ -8,21 +8,6 @@ This repo provides and example of '@opensaas/keystone-nextjs-auth' (https://gith
 - [Configuration](#configuration)
 - [Contributing](#contributing)
 
-## Starting
-This example uses Auth0 as the Provider, to start set the following environment variables
-
-Setup a regular Auth0 Application (https://auth0.com/docs/quickstart/webapp/nextjs/01-login#configure-auth0) with the callback URL of `http://localhost:3000/api/auth/callback/auth0`
-
-```bash
-export AUTH0_CLIENT_ID=<Your_Auth0_ClientID>
-export AUTH0_CLIENT_SECRET=<Your_Auth0_Secrete>
-export AUTH0_DOMAIN=<Your_Auth0_Domain>
-export NEXTAUTH_URL=http://localhost:3000
-export DATABASE_URL=file:./keystone-example.db
-```
-
-Then `yarn install` and `yarn dev`
-
 ## About
 This uses NextAuth.js (https://next-auth.js.org/) project to add social auth to Keystone-6 (https://keystonejs.com/). Primary testing has been done with Auth0, happy for others to test other providers/give feedback or send through a PR.
 
@@ -33,16 +18,27 @@ Add package by `yarn add @opensaas/keystone-nextjs-auth` then add the following 
 Add import...
 
 ```javascript
-import {
-  createAuth,
-  nextAuthProviders as Providers,
-} from '@opensaas/keystone-nextjs-auth';
+import { createAuth } from '@opensaas/keystone-nextjs-auth';
+import Auth0 from '@opensaas/keystone-nextjs-auth/providers/auth0';
+
 ```
 
 Add you Auth configuration including providers
-for Provider configuration see https://next-auth.js.org/configuration/providers.
+for Provider configuration see https://next-auth.js.org/configuration/providers. For Provider configuration replace `next-auth/providers/` with `@opensaas/keystone-nextjs-auth/providers/`
 
 ```javascript
+let sessionSecret = process.env.SESSION_SECRET;
+
+if (!sessionSecret) {
+  if (process.env.NODE_ENV === 'production') {
+    throw new Error(
+      'The SESSION_SECRET environment variable must be set in production'
+    );
+  } else {
+    sessionSecret = '-- DEV COOKIE SECRET; CHANGE ME --';
+  }
+}
+
 const auth = createAuth({
   listKey: 'User',
   identityField: 'subjectId',
@@ -52,8 +48,9 @@ const auth = createAuth({
   accountMap: {},
   profileMap: { email: 'email' },
   keystonePath: '/admin',
+  sessionSecret,
   providers: [
-    Providers.Auth0({
+    Auth0({
       clientId: process.env.AUTH0_CLIENT_ID || 'Auth0ClientID',
       clientSecret: process.env.AUTH0_CLIENT_SECRET || 'Auth0ClientSecret',
       domain: process.env.AUTH0_DOMAIN || 'opensaas.au.auth0.com',
