@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@keystone-next/fields": "15.0.0",
-    "@keystone-next/fields-document": "9.0.0",
+    "@keystone-next/fields-document": "14.0.0",
     "@keystone-next/keystone": "25.0.4",
     "@keystone-next/types": "25.0.0",
     "@opensaas/keystone-nextjs-auth": "13.0.2",
