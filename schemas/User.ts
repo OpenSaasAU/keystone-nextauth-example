@@ -1,26 +1,28 @@
-import { list } from '@keystone-next/keystone';
-import { text, relationship } from '@keystone-next/keystone/fields';
+import { list } from '@keystone-6/core';
+import { text, relationship } from '@keystone-6/core/fields';
 import { permissions, rules } from '../access';
 
 export const User = list({
   access: {
     operation: {
-      create: () => false,
-      read: rules.canManageUsers,
-      update: rules.canManageUsers,
+      create: () => true,
       // only people with the permission can delete themselves!
       // You can't delete yourself
-      delete: () => false,
-    }
+      delete: permissions.canManageUsers,
+    },
+    filter: {
+      query: rules.canManageUsers,
+      update: rules.canManageUsers,
+    },
   },
   ui: {
     // hide the backend UI from regular users
-    hideCreate: () => true,
-    hideDelete: () => true,
+    hideCreate: (args) => !permissions.canManageUsers(args),
+    hideDelete: (args) => !permissions.canManageUsers(args),
   },
   fields: {
-    name: text({ isRequired: true }),
-    email: text({ isRequired: true, isIndexed: true }),
+    name: text({ validation: { isRequired: true } }),
+    email: text({ validation: { isRequired: true }, isIndexed: true }),
     subjectId: text({ isIndexed: 'unique' }),
     role: relationship({
       ref: 'Role.assignedTo',

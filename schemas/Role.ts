@@ -1,8 +1,7 @@
-import { relationship, text } from '@keystone-next/keystone/fields';
-import { list } from '@keystone-next/keystone';
+import { relationship, text } from '@keystone-6/core/fields';
+import { list } from '@keystone-6/core';
 import { permissions } from '../access';
 import { permissionFields } from './permissionFields';
-
 
 export const Role = list({
   access: {
@@ -11,7 +10,7 @@ export const Role = list({
       query: permissions.canManageRoles,
       update: permissions.canManageRoles,
       delete: permissions.canManageRoles,
-    }
+    },
   },
   ui: {
     hideCreate: (args) => !permissions.canManageRoles(args),
@@ -19,7 +18,7 @@ export const Role = list({
     isHidden: (args) => !permissions.canManageRoles(args),
   },
   fields: {
-    name: text({ isRequired: true }),
+    name: text({ validation: { isRequired: true } }),
     ...permissionFields,
     assignedTo: relationship({
       ref: 'User.role',
