@@ -505,7 +505,7 @@
   resolved "https://registry.yarnpkg.com/@keystone-next/admin-ui-utils/-/admin-ui-utils-6.0.0.tgz#070f5dff7cc77da86106f9bd633aea262285b368"
   integrity sha512-H09o34qXnY4Z8KUfoJTJrpwmTw6aOPtwIpJZaLxXHD+GiG7pETyR2n94bfEGzouUH8z3F1dPGFY0RWGLmPtg8Q==
 
-"@keystone-next/fields-document@^9.0.0":
+"@keystone-next/fields-document@9.0.0":
   version "9.0.0"
   resolved "https://registry.yarnpkg.com/@keystone-next/fields-document/-/fields-document-9.0.0.tgz#ce2cc65606fd309a4c710b31f1784afa70ee13fa"
   integrity sha512-viLRbcOBZIFZLAuKFhhFU3WidJSRGrdChkuoGKGu+2EbBoO9rviu2EtEnmOhMqvu1KWnkPigrTXKSFkrIIWEUg==
@@ -540,12 +540,12 @@
     slate-history "^0.60.4"
     slate-react "^0.60.4"
 
-"@keystone-next/fields@^15.0.0":
+"@keystone-next/fields@15.0.0", "@keystone-next/fields@^15.0.0":
   version "15.0.0"
   resolved "https://registry.yarnpkg.com/@keystone-next/fields/-/fields-15.0.0.tgz#1a8bb11f62a84400adfa345b6bbe12145f3701c8"
   integrity sha512-FQdvNgFeQGIz6/i7Rkx4gonT2PLvMRC4SWVOLMJ2q1K+W5nNGd2dwhuly4bf2fHZd5JnUKRRtfJR4jLfkMg5qA==
 
-"@keystone-next/keystone@^25.0.0":
+"@keystone-next/keystone@25.0.4", "@keystone-next/keystone@^25.0.0":
   version "25.0.4"
   resolved "https://registry.yarnpkg.com/@keystone-next/keystone/-/keystone-25.0.4.tgz#cb78def580de682ffb4ad694317d2d11a477c030"
   integrity sha512-FTEmlpCaLMgjCKhKz5KCp1rEJafp6HhlY8mG7azWAwJETdKnEEam9CF2MZCV8iDji6kQq73KWyXUmkELHz9u8g==
@@ -645,7 +645,7 @@
     uid-safe "^2.1.5"
     uuid "^8.3.2"
 
-"@keystone-next/types@^25.0.0":
+"@keystone-next/types@25.0.0", "@keystone-next/types@^25.0.0":
   version "25.0.0"
   resolved "https://registry.yarnpkg.com/@keystone-next/types/-/types-25.0.0.tgz#e191486fddad66d1d03908771340d67f1d6a8ddf"
   integrity sha512-EyUmIizWH23C+ztJYBVYIk5A7CMBnMGse9j/986enoLQjFIG+vc+GcschXAT3arSbRokGBQZDLuQJsSy2SDtfg==
@@ -888,7 +888,7 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@opensaas/keystone-nextjs-auth@^13.0.0":
+"@opensaas/keystone-nextjs-auth@13.0.2":
   version "13.0.2"
   resolved "https://registry.yarnpkg.com/@opensaas/keystone-nextjs-auth/-/keystone-nextjs-auth-13.0.2.tgz#122a45352d82490d9a7988f108593a751aff951f"
   integrity sha512-gU9tOfe6NdCHn/Inl8KGaR4V0B/AtxcAHZ7CZcNZZJlXH2UvvTHrnAbQbWFsEmd0Y9s4fkLHgk/WPGrl8x241A==
@@ -1291,7 +1291,7 @@
   dependencies:
     "@types/ms" "*"
 
-"@types/ejs@^3.0.6":
+"@types/ejs@3.1.0", "@types/ejs@^3.0.6":
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/@types/ejs/-/ejs-3.1.0.tgz#ab8109208106b5e764e5a6c92b2ba1c625b73020"
   integrity sha512-DCg+Ka+uDQ31lJ/UtEXVlaeV3d6t81gifaVWKJy4MYVVgvJttyX/viREy+If7fz+tK/gVxTGMtyrFPnm4gjrVA==
@@ -2897,7 +2897,7 @@ ee-first@1.1.1:
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
-ejs@^3.1.6:
+ejs@3.1.6, ejs@^3.1.6:
   version "3.1.6"
   resolved "https://registry.yarnpkg.com/ejs/-/ejs-3.1.6.tgz#5bfd0a0689743bb5268b3550cceeebbc1702822a"
   integrity sha512-9lt9Zse4hPucPkoP7FHDF0LQAlGyF9JVpnClFLFH3aSSbxmyoqINRpp/9wePWJTUl4KOQwRL72Iw3InHPDkoGw==
@@ -6414,7 +6414,7 @@ typeorm@^0.2.30:
     yargs "^17.0.1"
     zen-observable-ts "^1.0.0"
 
-typescript@^4.3.5, typescript@^4.4.2:
+typescript@4.4.3, typescript@^4.4.2:
   version "4.4.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.4.3.tgz#bdc5407caa2b109efd4f82fe130656f977a29324"
   integrity sha512-4xfscpisVgqqDfPaJo5vkd+Qd/ItkoagnHpufr+i2QCHBsNYp+G7UAoyFl8aPtx879u38wPV65rZ8qbGZijalA==
