@@ -1,10 +1,10 @@
-import { config } from '@keystone-next/keystone';
-import { statelessSessions } from '@keystone-next/keystone/session';
+import { config } from '@keystone-6/core';
+import { statelessSessions } from '@keystone-6/core/session';
 import {
-  createAuth,
-  nextAuthProviders as Providers,
+  createAuth
 } from '@opensaas/keystone-nextjs-auth';
-import { KeystoneContext } from '@keystone-next/keystone/types';
+import Auth0 from '@opensaas/keystone-nextjs-auth/providers/auth0'
+import { KeystoneContext } from '@keystone-6/core/types';
 import { lists } from './schemas';
 
 let sessionSecret = process.env.SESSION_SECRET;
@@ -25,15 +25,16 @@ const auth = createAuth({
   listKey: 'User',
   identityField: 'subjectId',
   sessionData: `id name email`,
+  sessionSecret,
   autoCreate: true,
   userMap: { subjectId: 'id', name: 'name' },
   accountMap: {},
   profileMap: { email: 'email' },
   providers: [
-    Providers.Auth0({
+    Auth0({
       clientId: process.env.AUTH0_CLIENT_ID || 'Auth0ClientID',
       clientSecret: process.env.AUTH0_CLIENT_SECRET || 'Auth0ClientSecret',
-      domain: process.env.AUTH0_DOMAIN || 'opensaas.au.auth0.com',
+      issuer: process.env.AUTH0_ISSUER || 'https://opensaas.au.auth0.com',
     }),
   ],
 });
