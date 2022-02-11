@@ -254,25 +254,32 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.14.5"
 
-"@babel/runtime-corejs3@^7.16.5":
-  version "7.16.5"
-  resolved "https://registry.yarnpkg.com/@babel/runtime-corejs3/-/runtime-corejs3-7.16.5.tgz#9057d879720c136193f0440bc400088212a74894"
-  integrity sha512-F1pMwvTiUNSAM8mc45kccMQxj31x3y3P+tA/X8hKNWp3/hUsxdGxZ3D3H8JIkxtfA8qGkaBTKvcmvStaYseAFw==
+"@babel/runtime-corejs3@^7.16.8":
+  version "7.16.8"
+  resolved "https://registry.yarnpkg.com/@babel/runtime-corejs3/-/runtime-corejs3-7.16.8.tgz#ea533d96eda6fdc76b1812248e9fbd0c11d4a1a7"
+  integrity sha512-3fKhuICS1lMz0plI5ktOE/yEtBRMVxplzRkdn6mJQ197XiY0JnrzYV0+Mxozq3JZ8SBV9Ecurmw1XsGbwOf+Sg==
   dependencies:
-    core-js-pure "^3.19.0"
+    core-js-pure "^3.20.2"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@7.15.4", "@babel/runtime@^7.0.0", "@babel/runtime@^7.12.0", "@babel/runtime@^7.12.13", "@babel/runtime@^7.12.5", "@babel/runtime@^7.13.10", "@babel/runtime@^7.15.4", "@babel/runtime@^7.5.5", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
+"@babel/runtime@7.15.4", "@babel/runtime@^7.0.0", "@babel/runtime@^7.12.0", "@babel/runtime@^7.12.13", "@babel/runtime@^7.12.5", "@babel/runtime@^7.13.10", "@babel/runtime@^7.5.5", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
   version "7.15.4"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.15.4.tgz#fd17d16bfdf878e6dd02d19753a39fa8a8d9c84a"
   integrity sha512-99catp6bHCaxr4sJ/DbTGgHS4+Rs2RVd2g7iOap6SLGPDknRK9ztKNsE/Fg6QhSeh1FGE5f6gHGQmvvn3I3xhw==
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.16.3", "@babel/runtime@^7.16.5":
+"@babel/runtime@^7.16.3":
   version "7.16.5"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.16.5.tgz#7f3e34bf8bdbbadf03fbb7b1ea0d929569c9487a"
   integrity sha512-TXWihFIS3Pyv5hzR7j6ihmeLkZfrXGxAr5UfSl8CHf+6q/wpiYDkUau0czckpYG8QmnCIuPpdLtuA9VmuGGyMA==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
+"@babel/runtime@^7.16.7":
+  version "7.16.7"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.16.7.tgz#03ff99f64106588c9c403c6ecb8c3bafbbdff1fa"
+  integrity sha512-9E9FJowqAsytyOY6LG+1KuueckRL+aQW+mKvXRXnuFGyRAyepJPmEo9vgMfXUA6O9u3IeEdv9MAkppFcaQwogQ==
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -915,22 +922,22 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@opensaas/keystone-nextjs-auth@20.0.1":
-  version "20.0.1"
-  resolved "https://registry.yarnpkg.com/@opensaas/keystone-nextjs-auth/-/keystone-nextjs-auth-20.0.1.tgz#9f422b83af8eb3da1b8c24a59a58ddca17f00f9c"
-  integrity sha512-eZ/ZjKUFvmDRqQjhU5jGACYqL8fJ6tYuYAmgAjPNDuf8tWmj1SmaOFt/yyl1TEqOf5D48CQhvwvD6ffAPJAT6g==
+"@opensaas/keystone-nextjs-auth@20.1.1":
+  version "20.1.1"
+  resolved "https://registry.yarnpkg.com/@opensaas/keystone-nextjs-auth/-/keystone-nextjs-auth-20.1.1.tgz#758da5a9561deb8e04275714fee3fa7f86f59ed2"
+  integrity sha512-8nwn+E9APPdpBDaat0tmer6KHCNqHnNc5pCX1hMJisDnNL4e8mcPYLI+oNtEwy4yCtwzCw433zz7eXvVdaiQkQ==
   dependencies:
-    "@babel/runtime" "^7.16.5"
-    "@babel/runtime-corejs3" "^7.16.5"
+    "@babel/runtime" "^7.16.7"
+    "@babel/runtime-corejs3" "^7.16.8"
     "@types/ejs" "^3.1.0"
     cookie "^0.4.1"
     cross-fetch "^3.1.4"
     ejs "^3.1.6"
     fast-deep-equal "^3.1.3"
-    graphql "^15.7.2"
-    next-auth "^4.0.5"
+    graphql "^15.8.0"
+    next-auth "^4.1.0"
 
-"@panva/hkdf@^1.0.0":
+"@panva/hkdf@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@panva/hkdf/-/hkdf-1.0.1.tgz#ed0da773bd5f794d0603f5a5b5cee6d2354e5660"
   integrity sha512-mMyQ9vjpuFqePkfe5bZVIf/H3Dmk6wA8Kjxff9RcO4kqzJo+Ek9pGKwZHpeMr7Eku0QhLXMCd7fNCSnEnRMubg==
@@ -2392,10 +2399,10 @@ core-js-pure@^3.10.2:
   resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.18.0.tgz#e5187347bae66448c9e2d67c01c34c4df3261dc5"
   integrity sha512-ZnK+9vyuMhKulIGqT/7RHGRok8RtkHMEX/BGPHkHx+ouDkq+MUvf9mfIgdqhpmPDu8+V5UtRn/CbCRc9I4lX4w==
 
-core-js-pure@^3.19.0:
-  version "3.20.0"
-  resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.20.0.tgz#7253feccf8bb05b72c153ddccdbe391ddbffbe03"
-  integrity sha512-qsrbIwWSEEYOM7z616jAVgwhuDDtPLwZSpUsU3vyUkHYqKTf/uwOJBZg2V7lMurYWkpVlaVOxBrfX0Q3ppvjfg==
+core-js-pure@^3.20.2:
+  version "3.20.2"
+  resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.20.2.tgz#5d263565f0e34ceeeccdc4422fae3e84ca6b8c0f"
+  integrity sha512-CmWHvSKn2vNL6p6StNp1EmMIfVY/pqn3JLAjfZQ8WZGPOlGoO92EkX9/Mk81i6GxvoPXjUqEQnpM3rJ5QxxIOg==
 
 core-util-is@~1.0.0:
   version "1.0.3"
@@ -3236,7 +3243,7 @@ graphql@^15.3.0:
   resolved "https://registry.yarnpkg.com/graphql/-/graphql-15.6.0.tgz#e69323c6a9780a1a4b9ddf7e35ca8904bb04df02"
   integrity sha512-WJR872Zlc9hckiEPhXgyUftXH48jp2EjO5tgBBOyNMRJZ9fviL2mJBD6CAysk6N5S0r9BTs09Qk39nnJBkvOXQ==
 
-graphql@^15.7.2:
+graphql@^15.7.2, graphql@^15.8.0:
   version "15.8.0"
   resolved "https://registry.yarnpkg.com/graphql/-/graphql-15.8.0.tgz#33410e96b012fa3bdb1091cc99a94769db212b38"
   integrity sha512-5gghUc24tP9HRznNpV2+FIoq3xKkj5dTQqf4v0CpdPbFVwFkWoxOM+o+2OC9ZSvjEMTjfmG9QT+gcvggTwW1zw==
@@ -3795,10 +3802,15 @@ jest-worker@27.0.0-next.5:
     merge-stream "^2.0.0"
     supports-color "^8.0.0"
 
-jose@^4.1.2, jose@^4.1.4:
+jose@^4.1.4:
   version "4.3.7"
   resolved "https://registry.yarnpkg.com/jose/-/jose-4.3.7.tgz#5000e4a2d41ae411a5abdd11e6baf63fc2973a69"
   integrity sha512-S7Xfsy8nN9Iw/AZxk+ZxEbd5ImIwJPM0TfAo8zI8FF+3lidQ2yiK4dqzsaPKSbZD0woNVSY0KCql6rlKc5V7ug==
+
+jose@^4.3.7:
+  version "4.3.8"
+  resolved "https://registry.yarnpkg.com/jose/-/jose-4.3.8.tgz#149cb6a318689d5dbf469b40ac48c3f82276f4e6"
+  integrity sha512-dFiqN5FPLNWa/v+J3ShFjV/9sRGickxMbGUbqBrYr+BkrqLOieACaavSi9XmLJXe0Uzd7Cgs1oYtDvDrOyWLgw==
 
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
@@ -4288,18 +4300,18 @@ new-github-issue-url@0.2.1:
   resolved "https://registry.yarnpkg.com/new-github-issue-url/-/new-github-issue-url-0.2.1.tgz#e17be1f665a92de465926603e44b9f8685630c1d"
   integrity sha512-md4cGoxuT4T4d/HDOXbrUHkTKrp/vp+m3aOA7XXVYwNsUNMK49g3SQicTSeV5GIz/5QVGAeYRAOlyp9OvlgsYA==
 
-next-auth@^4.0.5:
-  version "4.0.5"
-  resolved "https://registry.yarnpkg.com/next-auth/-/next-auth-4.0.5.tgz#a41cdbe41f8a8dad42f4b3fb510ef1fb7035667e"
-  integrity sha512-POrV6c29Uu3+kVhOe8h3go2ytjeB2jPdW4GJwudUbK6OB++dkpT6yialmm8whM7hyoW4Xy3FbsoldGn8bVHhYg==
+next-auth@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/next-auth/-/next-auth-4.1.0.tgz#f804a8b5b7a3075f7799109151052c72e80e2ae0"
+  integrity sha512-PGq5jQyhEF3vB8zl4LOXzG1KxTKT5DQnfKbSBgPslg+kIhIFdDCH9cLT64tJfsKKyCchLGuFsVlGu+kDEGbqOQ==
   dependencies:
-    "@babel/runtime" "^7.15.4"
-    "@panva/hkdf" "^1.0.0"
+    "@babel/runtime" "^7.16.3"
+    "@panva/hkdf" "^1.0.1"
     cookie "^0.4.1"
-    jose "^4.1.2"
+    jose "^4.3.7"
     oauth "^0.9.15"
-    openid-client "^5.0.2"
-    preact "^10.5.14"
+    openid-client "^5.1.0"
+    preact "^10.6.3"
     preact-render-to-string "^5.1.19"
     uuid "^8.3.2"
 
@@ -4525,10 +4537,10 @@ open@7.4.2:
     is-docker "^2.0.0"
     is-wsl "^2.1.1"
 
-openid-client@^5.0.2:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/openid-client/-/openid-client-5.1.0.tgz#e9a22574c0cf1ce64555b96a4670e33593cc276a"
-  integrity sha512-gTTNQ8SzfoWIeSeVkYGMDzaHHx06wRnJRYCyG1xrkGu9Xww7X4Uz4fFEJ19KQRee4xttb38GIcxACRxQVChegg==
+openid-client@^5.1.0:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/openid-client/-/openid-client-5.1.1.tgz#4b6597c34444f77494e1a057e93ad83875529324"
+  integrity sha512-vwbS4T7hpaWol0GerNabnslUWTxq1NHjnLqdFovzqWlLHW5kp08Tme8FSSeTswABjSC9d88ofTFnfAYy/zwtlQ==
   dependencies:
     jose "^4.1.4"
     lru-cache "^6.0.0"
@@ -4766,7 +4778,7 @@ preact-render-to-string@^5.1.19:
   dependencies:
     pretty-format "^3.8.0"
 
-preact@^10.5.14:
+preact@^10.6.3:
   version "10.6.4"
   resolved "https://registry.yarnpkg.com/preact/-/preact-10.6.4.tgz#ad12c409ff1b4316158486e0a7b8d43636f7ced8"
   integrity sha512-WyosM7pxGcndU8hY0OQlLd54tOU+qmG45QXj2dAYrL11HoyU/EzOSTlpJsirbBr1QW7lICxSsVJJmcmUglovHQ==
