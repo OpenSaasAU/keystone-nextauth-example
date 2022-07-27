@@ -2131,19 +2131,19 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@opensaas/keystone-nextjs-auth@23.0.0":
-  version "23.0.0"
-  resolved "https://registry.yarnpkg.com/@opensaas/keystone-nextjs-auth/-/keystone-nextjs-auth-23.0.0.tgz#21146aea97e83127fe0ea9d28aa1c2d5f02b9249"
-  integrity sha512-qlrCWvaNIgbfvpaAFPFOiIYR21hgsXO5mSlNF26odi01Wc8JoefHrPO+fLFVw4SGHOI2VmkVTrSEIswmxvaWpA==
+"@opensaas/keystone-nextjs-auth@24.0.0":
+  version "24.0.0"
+  resolved "https://registry.yarnpkg.com/@opensaas/keystone-nextjs-auth/-/keystone-nextjs-auth-24.0.0.tgz#d1af1144a6a2275901a5bba04628eaf2b25efd3a"
+  integrity sha512-2ZmHlLIlIN4I7ZrMbsGDTeoxnszx4rgaE0NwRXP32l5HjRQn4jU8w6Qu+kROHK53h89zBgLSpmJO1ATWJjatGg==
   dependencies:
     "@babel/runtime" "^7.17.9"
     "@babel/runtime-corejs3" "^7.17.9"
-    "@types/ejs" "^3.1.0"
+    "@types/ejs" "^3.1.1"
     cookie "^0.5.0"
     cross-fetch "^3.1.5"
-    ejs "^3.1.7"
+    ejs "^3.1.8"
     fast-deep-equal "^3.1.3"
-    next-auth "^4.3.4"
+    next-auth "^4.10.2"
 
 "@opentelemetry/api@^1.0.1":
   version "1.1.0"
@@ -2525,15 +2525,10 @@
   dependencies:
     "@types/ms" "*"
 
-"@types/ejs@3.1.1":
+"@types/ejs@3.1.1", "@types/ejs@^3.1.1":
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/@types/ejs/-/ejs-3.1.1.tgz#29c539826376a65e7f7d672d51301f37ed718f6d"
   integrity sha512-RQul5wEfY7BjWm0sYY86cmUN/pcXWGyVxWX93DFFJvcrxax5zKlieLwA3T77xJGwNcZW0YW6CYG70p1m8xPFmA==
-
-"@types/ejs@^3.1.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@types/ejs/-/ejs-3.1.0.tgz#ab8109208106b5e764e5a6c92b2ba1c625b73020"
-  integrity sha512-DCg+Ka+uDQ31lJ/UtEXVlaeV3d6t81gifaVWKJy4MYVVgvJttyX/viREy+If7fz+tK/gVxTGMtyrFPnm4gjrVA==
 
 "@types/es-aggregate-error@^1.0.2":
   version "1.0.2"
@@ -3774,7 +3769,7 @@ ee-first@1.1.1:
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
-ejs@3.1.8, ejs@^3.1.7:
+ejs@3.1.8, ejs@^3.1.8:
   version "3.1.8"
   resolved "https://registry.yarnpkg.com/ejs/-/ejs-3.1.8.tgz#758d32910c78047585c7ef1f92f9ee041c1c190b"
   integrity sha512-/sXZeMlhS0ArkfX2Aw780gJzXSMPnKjtspYZv+f3NiKLlubezAHDU5+9xz6gd3/NhG3txQCo6xlglmTS+oTGEQ==
@@ -5489,10 +5484,10 @@ new-github-issue-url@0.2.1:
   resolved "https://registry.yarnpkg.com/new-github-issue-url/-/new-github-issue-url-0.2.1.tgz#e17be1f665a92de465926603e44b9f8685630c1d"
   integrity sha512-md4cGoxuT4T4d/HDOXbrUHkTKrp/vp+m3aOA7XXVYwNsUNMK49g3SQicTSeV5GIz/5QVGAeYRAOlyp9OvlgsYA==
 
-next-auth@^4.3.4:
-  version "4.9.0"
-  resolved "https://registry.yarnpkg.com/next-auth/-/next-auth-4.9.0.tgz#0d8cabcb22a976744131a2e68d5f08756f322593"
-  integrity sha512-/4S5dFeyNg2nXlD7g/Sh5A4WZWnUMDpEf8x/x+gzmAf5cAY2SjDM6sLk9u4XRmsndsxQpIMWDw03sUTAD+Yzog==
+next-auth@^4.10.2:
+  version "4.10.2"
+  resolved "https://registry.yarnpkg.com/next-auth/-/next-auth-4.10.2.tgz#6893f1bf4b3e5281bd340a6bcd3c331225c5e2be"
+  integrity sha512-9XeP3faA5M3LneNJuzZCrmyR1ONYVH+pNQTozLBlpzXSkVRCgy+PTLAojOGkCo5v5MWcCZNTNHUOQL6gIcYwEQ==
   dependencies:
     "@babel/runtime" "^7.16.3"
     "@panva/hkdf" "^1.0.1"
